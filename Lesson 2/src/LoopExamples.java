@@ -28,7 +28,7 @@ public class LoopExamples {
   
   // Find the error
   public static void flawedWhileLoopMethod(int iterations) {
-    while (iterations != 0) {
+    while (iterations > 0) {
       System.out.println("Running flawed while loop method iteration " + iterations);
       iterations = iterations - 2;
     }
@@ -36,6 +36,7 @@ public class LoopExamples {
   
   
   // FOR LOOPS:
+  
   
   public static void exampleForLoopMethod(int iterations) {
     for (int i = 0; i < iterations; i++) {
@@ -45,7 +46,7 @@ public class LoopExamples {
   
   // Better way to do this?
   public static void printDivisibleInRange(int divisor, int max) {
-    for (int i = 0; i < max; i++) {
+    for (int i = 0; i < max; i+=divisor) {
       if (i % divisor == 0) {
         System.out.println(i);
       }
@@ -53,19 +54,23 @@ public class LoopExamples {
   }
   
   public static int nthFibonacciNumber(int n) {
-    int last = 0;
-    int secondToLast = 1;
+    int last = 1;
+    int secondToLast = 0;
     int current = 0;
     for (int i = 0; i < n; i++) {
-        // Fill in the loop
-      
-      
+      current = last + secondToLast;
+      secondToLast = last;
+      last = current;
     }
     return current;
   }
   
   // Method that prints all ordered pairs (0, 0), (0, 1) (1, 0), ... (xmax, ymax)
   public static void printOrderedPairs(int xmax, int ymax) {
-    
+    for (int x = 0; x < xmax + 1; x++) {
+      for (int y = 0; y < ymax + 1; y++) {
+        System.out.println("(" + x + "," + y + ")");
+      }
+    }
   }
 }

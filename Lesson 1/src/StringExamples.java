@@ -1,5 +1,7 @@
 public class StringExamples {
   public static void main(String[] arguments) {
+    
+    
     String seperator = "------";
     String myString = "Hello!";
     

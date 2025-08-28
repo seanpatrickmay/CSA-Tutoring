@@ -1,7 +1,9 @@
 public class StringMethodExamples {
 
   public static void main(String[] args) {
-    replaceQuotationMarks();
+      indexOfExample();
+      String myString = "Hello!";
+      System.out.println(myString.substring(2));
   }
 
   public static void lengthExample() {
@@ -20,8 +22,8 @@ public class StringMethodExamples {
   }
 
   public static void indexOfExample() {
-    String exampleString = "01234A67";
-    //String exampleString = "01A34A67";
+    //String exampleString = "01234A67";
+    String exampleString = "01A34A67";
     int AIndex = exampleString.indexOf('A');
     System.out.println(AIndex);
   }

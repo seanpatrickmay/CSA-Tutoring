@@ -3,8 +3,6 @@ public class MethodExamples {
     printString("Line 1");
     threeLines();
     printString("Line 2");
-    
-    printSquare(5.0);
   }
   
   public static void printString(String toPrint) {
@@ -19,9 +17,5 @@ public class MethodExamples {
     newLine();
     newLine();
     newLine();
-  }
-  
-  public static void printSquare(double x) {
-    System.out.println(x*x);
   }
 }

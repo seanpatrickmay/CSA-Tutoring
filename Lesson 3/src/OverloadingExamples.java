@@ -19,7 +19,4 @@ public class OverloadingExamples {
   public static double exponentiate(int base, int power, int secondPower) {
     return Math.pow(Math.pow(base,  power), secondPower);
   }
-  
-  
-  
 }

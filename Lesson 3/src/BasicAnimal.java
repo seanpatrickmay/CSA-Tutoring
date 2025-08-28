@@ -2,23 +2,27 @@
 // A class that represents any animal
 class Animal {
   // The name of the animal
-  String name;
+  private String name;
 
   // The constructor method          What is the default constructor?
   public Animal(String name) {
     // Sets the name of the animal
     this.name = name;
   }
+  
+  Animal myAnimal = new Animal("dog");
+  myAnimal.getName() = "cat";
 
   public void speak() {
     System.out.println(this.name + " says: some sound");
   }
+  
 
   public void setName(String name) {
     this.name = name;
   }
 
-  public void getName() {
+  private void getName() {
     // this.name
     // Similar to array.length
     System.out.println(this.name);
@@ -70,7 +74,7 @@ public class BasicAnimal {
   public static void main(String[] args) {
     //testAnimals();
     //baseAnimalTest();
-    //testAnimalEquality();
+    testAnimalEquality();
     //testAnimalMutation();
     //testAnimalMutationComplex();
     //testHouseDogOverloading();

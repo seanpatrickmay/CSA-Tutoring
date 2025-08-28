@@ -1,15 +1,13 @@
 public class ArraysExamples {
   
   public static void main(String[] args) {
-    
-    arrayExample();
-    
+    loopingThrough();
   }
   
   public static void arrayExample() {
     int[] values = new int[3];
     
-    //System.out.println(values[2]);
+    System.out.println(values[2]);
     
     //Assigning the variables:
     values[0] = 1;
